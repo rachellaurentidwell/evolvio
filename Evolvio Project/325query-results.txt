@@ -1,0 +1,135 @@
+Query 1: Tells us which creatures in the evolvio world are not alive
+
+no rows selected
+
+Query 2: Gives us a rundown of the creatures evolve level,
+whether they have evolved or not
+
+SPECIES_TYPE              EVOLVE_TYPE                                           
+------------------------- --------------------                                  
+Fuzzle                    unevolved                                             
+Sparkler                  unevolved                                             
+Slimesnail                fully evolved                                         
+Dragacorn                 slight evolve                                         
+Galaxybear                partial evolve                                        
+Froggle                   nearly evolved                                        
+Glitterbee                fully evolved                                         
+Rainbowcat                nearly evolved                                        
+Pegapig                   slight evolve                                         
+Aquasloth                 partial evolve                                        
+glacial deer              fully evolved                                         
+
+SPECIES_TYPE              EVOLVE_TYPE                                           
+------------------------- --------------------                                  
+shimmerseal               partial evolve                                        
+powderpuff                slight evolve                                         
+glasswhale                slight evolve                                         
+frostfox                  unevolved                                             
+
+15 rows selected.
+
+Query 3: Tells us what foods each of our species eats, so that
+the user can know what to feed their creature in order for it to evolve
+
+SPECIES_TYPE              SPECIES_EVOLVE_FOOD                                   
+------------------------- --------------------                                  
+Fuzzle                    marshmellows                                          
+Sparkler                  stardust                                              
+Slimesnail                protozoa                                              
+Dragacorn                 Sparklers                                             
+Galaxybear                Fuzzles                                               
+Froggle                   Glitterbees                                           
+Glitterbee                honeydrops                                            
+Rainbowcat                froggles                                              
+Pegapig                   lemonberries                                          
+Aquasloth                 pink algae                                            
+glacial deer              iceflowers                                            
+
+SPECIES_TYPE              SPECIES_EVOLVE_FOOD                                   
+------------------------- --------------------                                  
+shimmerseal               frostfoxes                                            
+powderpuff                candyflakes                                           
+glasswhale                glacial deers                                         
+frostfox                  polarberries                                          
+
+15 rows selected.
+
+Query 4: Tells us which foods can be found in which environments
+
+ENVIRONMENT_TYPE     FOOD_TYPE                                                  
+-------------------- --------------------                                       
+Cosmic Clouds        marshmellow                                                
+Cosmic Clouds        stardust                                                   
+Cosmic Clouds        protozoa                                                   
+Magical Rainforest   honeydrops                                                 
+Magical Rainforest   lemonberries                                               
+Magical Rainforest   pink algae                                                 
+Winter Wonderland    iceflowers                                                 
+Winter Wonderland    candyflakes                                                
+Winter Wonderland    polarberries                                               
+
+9 rows selected.
+
+Query 5: This query updates the health status of all the creatures
+that have a species number below 3 to the max health num of all the
+health nums. This is necessary if you want to update the creatures
+health, or restore a bunch of creatures' healths.
+
+2 rows updated.
+
+
+SPECIES_TYPE              HEALTH_NUM                                            
+------------------------- ----------                                            
+Glitterbee                         2                                            
+Galaxybear                         3                                            
+Dragacorn                          4                                            
+Slimesnail                         5                                            
+powderpuff                         5                                            
+frostfox                           5                                            
+Froggle                            5                                            
+glacial deer                       5                                            
+Rainbowcat                         5                                            
+Pegapig                            5                                            
+Aquasloth                          6                                            
+
+SPECIES_TYPE              HEALTH_NUM                                            
+------------------------- ----------                                            
+shimmerseal                        8                                            
+glasswhale                         9                                            
+Fuzzle                             9                                            
+Sparkler                           9                                            
+
+15 rows selected.
+
+Query 6: counts the number of creatures in a given environment
+
+COUNT(SPECIES_TYPE)                                                             
+-------------------                                                             
+                  5                                                             
+
+Query 7: Tells us the average food abundance for the foods and groups by
+the food type.
+
+AVG(FOOD_ABUNDANCE) FOOD_TYPE                                                   
+------------------- --------------------                                        
+                 10 stardust                                                    
+                 10 pink algae                                                  
+                  4 iceflowers                                                  
+                  9 lemonberries                                                
+                  5 marshmellow                                                 
+                 10 protozoa                                                    
+                  6 candyflakes                                                 
+                  7 honeydrops                                                  
+                  7 polarberries                                                
+
+9 rows selected.
+
+Query 8: Tells us the predators and home environment of a specific creature
+
+SPECIES_TYPE              SPECIES_PREDATORS    SPECIES_HOME_ENVIRON             
+------------------------- -------------------- --------------------             
+Fuzzle                    Galaxybear           Cosmic Clouds                    
+Sparkler                  Dragacorn            Cosmic Clouds                    
+Slimesnail                none                 Cosmic Clouds                    
+Dragacorn                 none                 Cosmic Clouds                    
+Galaxybear                none                 Cosmic Clouds                  

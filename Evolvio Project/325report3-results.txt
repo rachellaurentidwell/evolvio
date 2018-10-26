@@ -1,0 +1,17 @@
+Here is a report showing the foods for each environment,
+and the species that eat those foods.
+
+SPECIES_TYPE              ENVIRONMENT_TYPE     FOOD_TYPE                        
+------------------------- -------------------- --------------------             
+Fuzzle                    Cosmic Clouds        marshmellow                      
+Sparkler                  Cosmic Clouds        stardust                         
+Slimesnail                Cosmic Clouds        protozoa                         
+Glitterbee                Magical Rainforest   honeydrops                       
+Pegapig                   Magical Rainforest   lemonberries                     
+Aquasloth                 Magical Rainforest   pink algae                       
+glacial deer              Winter Wonderland    iceflowers                       
+powderpuff                Winter Wonderland    candyflakes                      
+frostfox                  Winter Wonderland    polarberries                     
+
+9 rows selected.
+

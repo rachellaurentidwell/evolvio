@@ -1,0 +1,37 @@
+Rachel Tidwell 
+CS 325 - FALL 2017 
+last modified: 11.12.2017
+
+---------------------------------------------------------------------
+
+Creature(SPECIES_NUM, species_type, species_home_environment, 
+	 species_evolve_food, environment_num, health_num)
+    foreign key (environment_num) references Environment
+    foreign key (health_num) references Health
+
+Predators(SPECIES_NUM, SPECIES_PREDATORS)
+    foreign key (species_num) references Creature
+
+Food(FOOD_NUM, food_type, food_abundance, food_consumed,
+     species_num, health_num)
+    foreign key(species_num) references Creature 
+    foreign key(health_num) references Health 
+
+Environment(ENVIRONMENT_NUM, environment_type, environment_danger, 
+            evolve_num)
+    foreign key (evolve_num) references Evolved_state
+
+Enviro_food(ENVIRONMENT_NUM, ENVIRONMENT_FOOD) 
+    foreign key (environment_num) references Environment
+
+Evolved_state(EVOLVE_NUM, evolve_type) 
+
+Health(HEALTH_NUM, health)
+
+Food_in_enviro(FOOD_NUM, ENVIRONMENT_NUM)
+    foreign key(food_num) references Food
+    foreign key(environment_num) references Environment
+
+Creature_evolve(SPECIES_NUM, EVOLVE_NUM)
+    foreign key(species_num) references Creature
+    foreign key(evolve_num) references Evolved_state

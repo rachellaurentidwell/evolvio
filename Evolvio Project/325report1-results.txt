@@ -1,0 +1,26 @@
+Here is a report showing all of the creatures that
+have fuly evolved in the game
+
+SPECIES_TYPE              EVOLVE_TYPE                                           
+------------------------- --------------------                                  
+Fuzzle                    unevolved                                             
+Sparkler                  unevolved                                             
+Slimesnail                fully evolved                                         
+Dragacorn                 slight evolve                                         
+Galaxybear                partial evolve                                        
+Froggle                   nearly evolved                                        
+Glitterbee                fully evolved                                         
+Rainbowcat                nearly evolved                                        
+Pegapig                   slight evolve                                         
+Aquasloth                 partial evolve                                        
+glacial deer              fully evolved                                         
+
+SPECIES_TYPE              EVOLVE_TYPE                                           
+------------------------- --------------------                                  
+shimmerseal               partial evolve                                        
+powderpuff                slight evolve                                         
+glasswhale                slight evolve                                         
+frostfox                  unevolved                                             
+
+15 rows selected.
+

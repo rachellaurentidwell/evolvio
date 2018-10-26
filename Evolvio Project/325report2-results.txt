@@ -1,0 +1,25 @@
+Here is a report showing all of the creatures' predators in the game.
+
+SPECIES_TYPE              SPECIES_PREDATORS                                     
+------------------------- --------------------                                  
+Fuzzle                    Galaxybear                                            
+Sparkler                  Dragacorn                                             
+Slimesnail                none                                                  
+Dragacorn                 none                                                  
+Galaxybear                none                                                  
+Froggle                   Rainbowcat                                            
+Glitterbee                Froggle                                               
+Rainbowcat                none                                                  
+Pegapig                   none                                                  
+Aquasloth                 none                                                  
+glacial deer              glasswhale                                            
+
+SPECIES_TYPE              SPECIES_PREDATORS                                     
+------------------------- --------------------                                  
+shimmerseal               none                                                  
+powderpuff                none                                                  
+glasswhale                none                                                  
+frostfox                  shimmerseal                                           
+
+15 rows selected.
+

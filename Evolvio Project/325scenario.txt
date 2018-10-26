@@ -1,0 +1,37 @@
+Name: Rachel Tidwell 
+Date last modified: 10.06.2017
+
+
+Scenario Name: Evolvio 
+
+Possible Questions 
+
+1. What is my creature's current health? 
+2. How close is my creature to his/her evolved state? 
+3. Where is my creature in the Evolvio world at this given moment?
+4. What are my creature's predators? 
+5. How close is food? 
+6. How close are predators? 
+
+
+
+Business Rules 
+
+1. A creature can eat varying types of food in order to keep its health up, but it can only 
+   eat ONE type of food that will allow it to evolve. 
+
+2. There are 15 species within the Evolvio world, and each has a unique type of food that 
+   allows it to evolve. 
+
+3. Creatures can be killed, either by natural disasters, lack of health, or by their predators. 
+
+4. There are 3 different environments within the evolvio world, and each creature comes from only 
+   one of these environments. Creatures can travel to different environments. They are less likely 
+   to find their evolvedùfood in these other environments, but traveling positively 
+   affects their evolved speed. 
+
+5. If a creature is in a different environment than its home environment when it evolves, it 
+   will evolve to fit that environment. This means that there are three possible types of 
+   evolved states for each creature. Making a total of 45 possible evolved states. 
+
+
